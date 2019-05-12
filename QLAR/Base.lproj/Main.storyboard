@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,34 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QLAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lDy-dx-zOh" userLabel="Background">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Overlay" translatesAutoresizingMaskIntoConstraints="NO" id="tOK-RW-cIT" userLabel="bg.app">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.79871559219999999" blue="0.71830104100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="tOK-RW-cIT" firstAttribute="centerY" secondItem="lDy-dx-zOh" secondAttribute="centerY" id="3ne-R5-Q3h"/>
+                                    <constraint firstItem="tOK-RW-cIT" firstAttribute="height" secondItem="lDy-dx-zOh" secondAttribute="height" id="64X-UE-iBC"/>
+                                    <constraint firstItem="tOK-RW-cIT" firstAttribute="centerX" secondItem="lDy-dx-zOh" secondAttribute="centerX" id="KWV-lQ-SKs"/>
+                                    <constraint firstItem="tOK-RW-cIT" firstAttribute="width" secondItem="lDy-dx-zOh" secondAttribute="width" id="s4H-bj-qyp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lDy-dx-zOh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0F8-57-KY8"/>
+                            <constraint firstItem="lDy-dx-zOh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="6kl-kC-2uM"/>
+                            <constraint firstItem="lDy-dx-zOh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="L5J-4c-fXi"/>
+                            <constraint firstItem="lDy-dx-zOh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WqQ-ua-dNR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -21,4 +48,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Overlay" width="413" height="896"/>
+    </resources>
 </document>
