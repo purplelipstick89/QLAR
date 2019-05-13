@@ -10,8 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let questions: [String] = ["Pick a color:","Pick a food:", "Pick an activity", "Pick a song", "Pick an animal:"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view.
     }
 
